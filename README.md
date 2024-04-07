@@ -12,6 +12,7 @@ It is written by 4 authors,
 2. Charles E. Leiserson
 3. Ronald L. Rivest
 4. Clifford Stein
+
 which is why the book is also reffered to as CLRS.
 
 
