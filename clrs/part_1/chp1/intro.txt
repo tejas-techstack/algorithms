@@ -1,0 +1,25 @@
+#################
+
+File: intro.txt
+Author: Tejas R
+Date: April 9, 2024
+Description: Introduction to algorithms, chapter 1
+
+#################
+
+
+what is an algorithm?
+
+input-process-output.
+these are the three main functions of any piece of software
+
+an algorithm is a set of instructions, that can process "n" amount of data in a predefinied time.
+
+in simpler words, given an arbitrary size of input, the amount of time taken to process it is definied
+by the size of the input.
+
+mathematically representing it, if we have x instructions and the algorithm can solve xlogx instructions per second
+
+it will take x/xlogx seconds for the entire data set to finish being processed.
+
+
