@@ -1,0 +1,46 @@
+###############
+
+file : asymptotic_notations
+author : Tejas R
+date : April 10, 2024
+description : information about the asymptotic notations
+attachments : bounding_graphs.jpg ; 
+
+###############
+
+what are asymptotic notations:
+
+asymptotic notations are basically time-bounds on the run time of the algorithm. Basically if we have a function
+say f(x), that represents the run time of the algorithm, x represents the amount of data. 
+
+an asymptotic notation provides a bound for this function, such that the function does not cross the bound and is 
+limited by it, although this applies only for large values of input data. 
+
+
+there are 3 main asymptotic notations:
+
+1. O-notation (O)
+2. Omega-notation (Om)
+3. Theta-notation (0)
+
+1. O-notation
+	-provides an upper bound on the function.
+	-there exists a positive constant c and n0 for which 
+		0 <= f(n) <= cg(n); for all n >= n0;
+2. Om-notation
+	-provides a lower bound on the funciton.
+	-there exists aa positive constant c and n0 for which
+		ch(n) <= f(n) <= INF; for all n >= n0;
+
+3. Theta-notation (0)
+	-provides a tight bound on the function.
+	-there exists a positive constant c1, c2 and n0 for which
+		c1h(n) <= f(n) <= c2g(n); for all n >= n0;
+
+In all practicallity, these concepts are purely conceptual.
+we generally use the O-notation as we generally only need an upper bound for a function and a lower bound is practically not useful. And for this reason defining a theta-notation is also of little use. 
+
+there are also two others lesser used notations called o-notation and w-notations.	
+
+
+ 

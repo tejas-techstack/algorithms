@@ -1,0 +1,73 @@
+#############
+
+file: conventions.txt
+author: Tejas R
+date: april 9, 2024
+description: pseudocode conventions
+
+#############
+
+
+Pseudocode: Piece of code that has all the logical components of any programming language, but does not represent
+	    any singular programming language
+
+loop invariant: It is the state of the system at any given instant.
+
+a loop invariant is true, if at each instant considered, the loop invariant is following the logic
+stated by the algorithm. if at any given instant the loop invariant is not doing what the logic intends to,
+it is false and the algorithm being used is incorrect.
+
+it is termed invariant for this purpose, it is always true, not changing.
+
+There are 3 main steps to ensure if any given algorithm is correct
+
+1. Initialization - the invariant is true before the first iteration
+2. Maintenance - if it is true before the iteration, it should remain true before the next iteration
+3. Termination - invariant should remain true, and also show definite properties that indicate that the end goal
+		 has been reached
+
+
+INSERTION SORT
+
+keys: the numbers to be sorted
+satellite data: keys that are associated with each other form satellite data
+record: together these two form a record
+
+how does insertion sort work?
+
+lets say we have a set of numbers 5, 4, 6, 3, 1, 2
+
+let us assume they are kept in boxes that donot move, only the numbers inside them do. 
+the boxes are named A,B,C so on.
+
+we move from left to right, comparing the number of the current box with each of the boxes to its left.
+
+let us consider box A, since there is no box next to it we move to the next box, box B, we see that 4<5 so we move 4 to
+box A and 5 to box B. the current numbers are 4, 5, 6, 3, 1, 2
+ 
+then we check box C, and compare it to box A and box B, we see that the number in box C is greater so we donot do anything. The state is 4, 5, 6, 3, 1, 2.
+
+then we check box D, we see that 3 is lesser than 4, so we put 3 in box A and move all the other numbers by 1 box, ie 
+3, 4, 5, 6, 1, 2.
+
+we then move to box E, we see that 1 is smaller than 3, so we move 1 to box A and all the other numbers by 1 box, ie
+1, 3, 4, 5, 6, 2.
+
+we then move to the last box, we see that 2 is smaller than 3 but bigger than 1, so we move 2 to box B, and move all the other numbers by 1 box.
+
+hence we get 1, 2, 3, 4, 5, 6.
+
+at any given instant we see that the boxes left of the currently selected box is always arranged in ascending order.
+
+MERGE SORT
+
+-it is a divide and conquer method
+
+
+
+
+
+
+
+
+
