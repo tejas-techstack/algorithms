@@ -63,10 +63,42 @@ MERGE SORT
 
 -it is a divide and conquer method
 
+how does merge sort work?
 
 
+we can first understand the logic of merge sort by reverse tracking how it works.
 
+lets say we have a slice of an array ...1,3,4,6,2,5,6,9......
 
+we split this array in half, when we do we see that 
+[1,3,4,6] and [2,5,6,9] these two subarrays are sorted.
+
+what we do next is compare each element from L[] and R[] and place it back into the array
+
+[3,4,6] [2,5,6,9] => [1]                        1<2
+[3,4,6] [5,6,9]   => [1,2]            		2<3
+[4,6] [5,6,9]     => [1,2,3] 			3<4
+[6] [5,6,9]       => [1,2,3,4]                  4<5
+[6] [6,9]         => [1,2,3,4,5]                5<6
+[] [6,9]          => [1,2,3,4,5]                6=6
+[] []             => [1,2,3,4,5,6,6,9]          we can move the entire right hand side to the result.
+
+we see that this slice of array is now arranged in order.
+
+let us assume an array of size n which is a perfect power of 2.
+how merge sort works is that, we take the array of size n and keep splitting it as n/2 until we reach a subarray of size 1
+
+since a sub array of size 1 is always sorted we can assume this as the base case.
+
+now we go back upwards, lets say we have 16 sub arrays of size 1, we compare each of the two adjacent subarrays and 
+treat them as L[] and R[] 
+
+we now get 8 sub arrays of size 2, each of the subarray is sorted.
+
+so we take each adjacent subarray of size 2 and treat them as L[] and R[] and sort them using merge sort
+
+we continue this until we reach 2 sub arrays of size 8 each of which have been recursively sorted, use merge sort once
+more and get the final array of size n which has now been sorted.
 
 
 
