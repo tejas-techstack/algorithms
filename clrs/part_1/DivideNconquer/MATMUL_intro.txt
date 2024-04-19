@@ -1,0 +1,77 @@
+##################
+
+file: MATMUL_intro.txt
+author: Tejas R
+date: 15 april 2024
+description: A short introduction to matrix multiplication
+
+##################
+
+Divide and conquer/ Recursion:
+
+Divide and conquer is a 3 step method to solve an algorithm effecitvely
+
+1) divide
+2) conquer
+3) combine
+
+We first divide the input into smaller subsets of the input, perform any calculation on that reduced data set and then
+combine the final data to get a better asymptotic time.
+
+Recursion: 
+
+Recursion is an example of a divide and conquer algorithm
+
+the way recursion works is simple, let us say we have a function RecurFunc(n);
+which takes n, which is the size of data as input
+
+the function calls itself with a reduced data inside the function itself
+
+RecurFunc(n){
+	if BaseCase == True:
+		//perform calculations
+		return value;
+	else:
+		RecurFunc(n/x);
+}
+
+where n/x is any reduced data set
+it need not be n/x alone it can also be something like (n-1); where the reduction is constant.
+
+
+Recursion follows two simple steps:
+
+1) base case
+2) reduce case
+
+Let us assume that we have a data set of size n0. 
+Any reduction of data is represented as n1,n2,n3... etc. (say nx in general) 
+
+1) BASE case:
+	at this level, the data set is at its lowest possible form
+	we can say that nx cannot be reduced anymore and the calculations must be performed on this given
+	amount of data nx.
+	if we have reduced data until, say n7, we cannot reduce the data anymore, ie n8 does not exist. 
+	this may be due to the fact that the data cannot be reduced at all, or it makes no sense to reduce it further.
+
+	any function call must fail this case to go to the reduce case.
+
+2) REDUCE case:
+	at this level, the data can be processed further by reducing it, this case will keep running until
+	the data reaches the base case.
+
+
+Matrix Multiplication:
+
+Matrix multiplication is an 
+	
+
+
+
+
+
+
+
+
+
+
