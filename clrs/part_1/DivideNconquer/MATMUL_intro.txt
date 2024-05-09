@@ -63,7 +63,36 @@ Any reduction of data is represented as n1,n2,n3... etc. (say nx in general)
 
 Matrix Multiplication:
 
-Matrix multiplication is an 
+Matrix multiplication is a prime example, which shows the difference between using divide and conquer 
+and a normal algorithm.
+
+In the regular matrix multiplication, we use three nested loops to multiply each element inside
+the matrix one by one and save it in the new matrix.
+
+however we can reduce the number of operations and runs required to compute the end matrix.
+
+original matrix  multiplication:
+
+(let us assume a matrix nxn)
+
+MATMUL(MAT_A, MAT_B):
+	for i in the range (0, n):
+		for j in range(0,n):
+			for k in range(0, n):
+				MAT_C[i][j] = MAT_C[i][j] + (MAT_A[i][k] * MAT_B[k][j])
+
+
+this will effectively compute the multplied matrix into matrix C in time O(n^3).
+
+
+however we can apply a simple recursive algorithm to reduce this time
+we can do this by dividing each multiplication as a n/2 x n/2 operation.
+
+
+so lets say we have 
+
+
+
 	
 
 
